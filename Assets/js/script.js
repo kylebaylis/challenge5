@@ -9,8 +9,6 @@ var currentHour = Number(moment().format("H"));/* to test different times - .sub
 // to add current date to header
 $("<p>" + date + "</p>").appendTo("#currentDay");
 
-
-
 // to change color based on time
 var timeChange = function() {
     if (currentHour < 9) {
@@ -148,3 +146,13 @@ var timeChange = function() {
 }
 
 timeChange();
+
+var savedTask9 = $("#textArea9").val();
+
+$(document).ready(function(){
+    $("#saveBtn9").click(function(){
+        var savedTask9 = $("#textArea9").val();
+        var stringTask9 = JSON.stringify(savedTask9);
+        localStorage.setItem("9 AM", stringTask9);
+    });
+});
