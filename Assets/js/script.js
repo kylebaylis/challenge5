@@ -148,11 +148,83 @@ var timeChange = function() {
 timeChange();
 
 var savedTask9 = $("#textArea9").val();
+var savedTask10 = $("#textArea10").val();
+var savedTask11 = $("#textArea11").val();
+var savedTask12 = $("#textArea12").val();
+var savedTask13 = $("#textArea13").val();
+var savedTask14 = $("#textArea14").val();
+var savedTask15 = $("#textArea15").val();
+var savedTask16 = $("#textArea16").val();
+var savedTask17 = $("#textArea17").val();
 
 $(document).ready(function(){
     $("#saveBtn9").click(function(){
         var savedTask9 = $("#textArea9").val();
         var stringTask9 = JSON.stringify(savedTask9);
         localStorage.setItem("9 AM", stringTask9);
+    });
+});
+
+$(document).ready(function(){
+    $("#saveBtn10").click(function(){
+        var savedTask10 = $("#textArea10").val();
+        var stringTask10 = JSON.stringify(savedTask10);
+        localStorage.setItem("10 AM", stringTask10);
+    });
+});
+
+$(document).ready(function(){
+    $("#saveBtn11").click(function(){
+        var savedTask11 = $("#textArea11").val();
+        var stringTask11 = JSON.stringify(savedTask11);
+        localStorage.setItem("11 AM", stringTask11);
+    });
+});
+
+$(document).ready(function(){
+    $("#saveBtn12").click(function(){
+        var savedTask12 = $("#textArea12").val();
+        var stringTask12 = JSON.stringify(savedTask12);
+        localStorage.setItem("12 PM", stringTask12);
+    });
+});
+
+$(document).ready(function(){
+    $("#saveBtn13").click(function(){
+        var savedTask13 = $("#textArea13").val();
+        var stringTask13 = JSON.stringify(savedTask13);
+        localStorage.setItem("1 PM", stringTask13);
+    });
+});
+
+$(document).ready(function(){
+    $("#saveBtn14").click(function(){
+        var savedTask14 = $("#textArea14").val();
+        var stringTask14 = JSON.stringify(savedTask14);
+        localStorage.setItem("2 PM", stringTask14);
+    });
+});
+
+$(document).ready(function(){
+    $("#saveBtn15").click(function(){
+        var savedTask15 = $("#textArea15").val();
+        var stringTask15 = JSON.stringify(savedTask15);
+        localStorage.setItem("3 PM", stringTask15);
+    });
+});
+
+$(document).ready(function(){
+    $("#saveBtn16").click(function(){
+        var savedTask16 = $("#textArea16").val();
+        var stringTask16 = JSON.stringify(savedTask16);
+        localStorage.setItem("4 PM", stringTask16);
+    });
+});
+
+$(document).ready(function(){
+    $("#saveBtn17").click(function(){
+        var savedTask17 = $("#textArea17").val();
+        var stringTask17 = JSON.stringify(savedTask17);
+        localStorage.setItem("5 PM", stringTask17);
     });
 });
