@@ -2,12 +2,14 @@
 var date = String(moment().format("dddd, MMMM Do"));
 
 // for each time block to compare to for coloring
-var currentHour = Number(moment()/* to test different times - .subtract(2, "hours")*/.format("H"));
+var currentHour = Number(moment().format("H"));/* to test different times - .subtract(2, "hours")*/
 
 // window.alert(currentHour); - test to see if working
 
 // to add current date to header
 $("<p>" + date + "</p>").appendTo("#currentDay");
+
+
 
 // to change color based on time
 var timeChange = function() {
