@@ -145,8 +145,10 @@ var timeChange = function() {
     }
 }
 
+// to run color changing
 timeChange();
 
+// to save text for each time block to local storage
 var savedTask9 = $("#textArea9").val();
 var savedTask10 = $("#textArea10").val();
 var savedTask11 = $("#textArea11").val();
@@ -157,6 +159,7 @@ var savedTask15 = $("#textArea15").val();
 var savedTask16 = $("#textArea16").val();
 var savedTask17 = $("#textArea17").val();
 
+// saves on click of save button, turns it into string, stores as time slot value
 $(document).ready(function(){
     $("#saveBtn9").click(function(){
         var savedTask9 = $("#textArea9").val();
@@ -228,3 +231,40 @@ $(document).ready(function(){
         localStorage.setItem("5 PM", stringTask17);
     });
 });
+
+// to pull from local storage and place into text area
+var saved9 = localStorage.getItem("9 AM");
+var quote9 = saved9.replace(/["]+/g, '');
+$("#textArea9").append(quote9);
+
+var saved10 = localStorage.getItem("10 AM");
+var quote10 = saved10.replace(/["]+/g, '');
+$("#textArea10").append(quote10);
+
+var saved11 = localStorage.getItem("11 AM");
+var quote11 = saved11.replace(/["]+/g, '');
+$("#textArea11").append(quote11);
+
+var saved12 = localStorage.getItem("12 PM");
+var quote12 = saved12.replace(/["]+/g, '');
+$("#textArea12").append(quote12);
+
+var saved13 = localStorage.getItem("1 PM");
+var quote13 = saved13.replace(/["]+/g, '');
+$("#textArea13").append(quote13);
+
+var saved14 = localStorage.getItem("2 PM");
+var quote14 = saved14.replace(/["]+/g, '');
+$("#textArea14").append(quote14);
+
+var saved15 = localStorage.getItem("3 PM");
+var quote15 = saved15.replace(/["]+/g, '');
+$("#textArea15").append(quote15);
+
+var saved16 = localStorage.getItem("4 PM");
+var quote16 = saved16.replace(/["]+/g, '');
+$("#textArea16").append(quote16);
+
+var saved17 = localStorage.getItem("5 PM");
+var quote17 = saved17.replace(/["]+/g, '');
+$("#textArea17").append(quote17);
